@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { FormsModule } from '@angular/forms';
+import { SearchempComponent } from './searchemp/searchemp.component';
 
 const routes:Routes=[
   {
-
+    path:"",component:AddemployeeComponent
+  },
+  {
+    path:"search",component:SearchempComponent
   }
 ]
 
@@ -18,7 +22,8 @@ const routes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddemployeeComponent
+    AddemployeeComponent,
+    SearchempComponent
   ],
   imports: [
     BrowserModule,
